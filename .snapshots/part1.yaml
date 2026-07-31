@@ -1,6 +1,6 @@
 v: 2
-timestamp: '2026-07-31T09:14:31.266292'
-uid: 023e6bf5-b15a-412d-b828-41769dd80b1e
+timestamp: '2026-07-31T09:20:31.204118'
+uid: 841b624f-4e89-49eb-b723-462ec407d011
 objects:
 - name: Body
   id: 2564
@@ -1014,7 +1014,7 @@ objects:
       paths:
         .:
           type: QUANTITY
-          value: 20.0 mm
+          value: 30.0 mm
       group: Side1
     Length2:
       kind: Primitive
@@ -1308,7 +1308,7 @@ objects:
           value: 0.0 mm
         Base.z:
           type: QUANTITY
-          value: 30.0 mm
+          value: 40.0 mm
         Rotation.Angle:
           type: QUANTITY
           value: 0.0 deg
