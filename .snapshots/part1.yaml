@@ -1,6 +1,6 @@
 v: 2
-timestamp: '2026-07-31T09:00:57.758076'
-uid: 59c49ec6-7dc0-4d9e-b7a8-36d20c399f05
+timestamp: '2026-07-31T09:12:43.049893'
+uid: 651c16e4-73ac-4f29-95ab-a84c7b9ff167
 objects:
 - name: Body
   id: 2564
@@ -56,7 +56,7 @@ objects:
       paths:
         .:
           type: STRING
-          value: <PartDesign::Chamfer>
+          value: <PartDesign::Fillet>
           freecad_type: PartDesign.Feature
       group: Base
 - name: Origin
@@ -1687,6 +1687,93 @@ objects:
           type: BOOL
           value: false
       group: Chamfer
+- name: Fillet001
+  id: 2581
+  type_id: PartDesign::Fillet
+  properties:
+    Base:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <PartDesign::Chamfer>
+            freecad_type: PartDesign.Feature
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge21
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge19
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge20
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge22
+      group: Base
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Fillet001
+      group: Base
+    Radius:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 5.0 mm
+      group: Fillet
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    SupportTransform:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    UseAllEdges:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Fillet
 occurrences:
 - path: Body
   after: null
@@ -1694,6 +1781,8 @@ occurrences:
   after: Body/Fillet
 - path: Body/Fillet
   after: Body/Pocket
+- path: Body/Fillet001
+  after: Body/Chamfer
 - path: Body/Origin
   after: null
 - path: Body/Origin/Origin001
