@@ -1,0 +1,1548 @@
+v: 2
+timestamp: '2026-07-31T08:29:11.943957'
+uid: 87eb1adb-f520-47a7-86e5-c67f89cdfc46
+objects:
+- name: Body
+  id: 2564
+  type_id: PartDesign::Body
+  properties:
+    AllowCompound:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Base
+    BaseFeature:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Base
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Body
+      group: Base
+    Placement:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 0.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Base
+    Tip:
+      kind: Unknown
+      paths:
+        .:
+          type: STRING
+          value: <PartDesign::Pocket>
+          freecad_type: PartDesign.Feature
+      group: Base
+- name: Origin
+  id: 2565
+  type_id: App::Origin
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Origin
+      group: Base
+- name: X_Axis
+  id: 2566
+  type_id: App::Line
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: X-axis
+      group: Base
+- name: Y_Axis
+  id: 2567
+  type_id: App::Line
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Y-axis
+      group: Base
+- name: Z_Axis
+  id: 2568
+  type_id: App::Line
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Z-axis
+      group: Base
+- name: XY_Plane
+  id: 2569
+  type_id: App::Plane
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: XY-plane
+      group: Base
+- name: XZ_Plane
+  id: 2570
+  type_id: App::Plane
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: XZ-plane
+      group: Base
+- name: YZ_Plane
+  id: 2571
+  type_id: App::Plane
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: YZ-plane
+      group: Base
+- name: Origin001
+  id: 2572
+  type_id: App::Point
+  properties:
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Origin001
+      group: Base
+- name: Sketch
+  id: 2573
+  type_id: Sketcher::SketchObject
+  properties:
+    ArcFitTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: 1.0e-06
+      group: Sketch
+    AttacherEngine:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Engine 3D
+      group: Attachment
+    AttachmentOffset:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 0.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Attachment
+    Constraints:
+      kind: List
+      paths: {}
+      items:
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 0
+          FirstPos:
+            type: INT
+            value: 2
+          Second:
+            type: INT
+            value: 1
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 1
+          FirstPos:
+            type: INT
+            value: 2
+          Second:
+            type: INT
+            value: 2
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 2
+          FirstPos:
+            type: INT
+            value: 2
+          Second:
+            type: INT
+            value: 3
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 3
+          FirstPos:
+            type: INT
+            value: 2
+          Second:
+            type: INT
+            value: 0
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Horizontal
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 0
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: -2000
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Horizontal
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 2
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: -2000
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Vertical
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 1
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: -2000
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Vertical
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 3
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: -2000
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Symmetric
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 2
+          FirstPos:
+            type: INT
+            value: 1
+          Second:
+            type: INT
+            value: 0
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: 4
+          ThirdPos:
+            type: INT
+            value: 1
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 4
+          FirstPos:
+            type: INT
+            value: 1
+          Second:
+            type: INT
+            value: -1
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Equal
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 2
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: 1
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: DistanceX
+          Value:
+            type: FLOAT
+            value: 45.0
+          First:
+            type: INT
+            value: 2
+          FirstPos:
+            type: INT
+            value: 2
+          Second:
+            type: INT
+            value: 2
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      group: Sketch
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Sketch
+      group: Base
+    MakeInternals:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Internal Geometry
+    MapMode:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: FlatFace
+      group: Attachment
+    MapReversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Attachment
+    Placement:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 0.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Base
+- name: Pad
+  id: 2574
+  type_id: PartDesign::Pad
+  properties:
+    AllowMultiFace:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: SketchBased
+    AlongSketchNormal:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Pad
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Pad
+      group: Base
+    Length:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 10.0 mm
+      group: Side1
+    Length2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 10.0 mm
+      group: Side2
+    Midplane:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    Offset:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side1
+    Offset2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side2
+    Profile:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: ''
+      group: SketchBased
+    ReferenceAxis:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: N_Axis
+      group: Pad
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    Reversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    SideType:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: One side
+      group: Pad
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    TaperAngle:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side1
+    TaperAngle2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side2
+    Type:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Length
+      group: Side1
+    Type2:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Length
+      group: Side2
+    UpToFace:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Side1
+    UpToFace2:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Side2
+    UseCustomVector:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Pad
+- name: Sketch001
+  id: 2575
+  type_id: Sketcher::SketchObject
+  properties:
+    ArcFitTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: 1.0e-06
+      group: Sketch
+    AttacherEngine:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Engine 3D
+      group: Attachment
+    AttachmentOffset:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 0.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Attachment
+    Constraints:
+      kind: List
+      paths: {}
+      items:
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 0
+          FirstPos:
+            type: INT
+            value: 3
+          Second:
+            type: INT
+            value: -1
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Diameter
+          Value:
+            type: FLOAT
+            value: 35.0
+          First:
+            type: INT
+            value: 0
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: -2000
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      group: Sketch
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Sketch001
+      group: Base
+    MakeInternals:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Internal Geometry
+    MapMode:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: FlatFace
+      group: Attachment
+    MapReversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Attachment
+    Placement:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 10.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Base
+- name: Pad001
+  id: 2576
+  type_id: PartDesign::Pad
+  properties:
+    AllowMultiFace:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: SketchBased
+    AlongSketchNormal:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Pad
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Pad001
+      group: Base
+    Length:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 20.0 mm
+      group: Side1
+    Length2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 10.0 mm
+      group: Side2
+    Midplane:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    Offset:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side1
+    Offset2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side2
+    Profile:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: ''
+      group: SketchBased
+    ReferenceAxis:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: N_Axis
+      group: Pad
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    Reversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    SideType:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: One side
+      group: Pad
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    TaperAngle:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side1
+    TaperAngle2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side2
+    Type:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Length
+      group: Side1
+    Type2:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Length
+      group: Side2
+    UpToFace:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Side1
+    UpToFace2:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Side2
+    UseCustomVector:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Pad
+- name: Sketch002
+  id: 2577
+  type_id: Sketcher::SketchObject
+  properties:
+    ArcFitTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: 1.0e-06
+      group: Sketch
+    AttacherEngine:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Engine 3D
+      group: Attachment
+    AttachmentOffset:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 0.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Attachment
+    Constraints:
+      kind: List
+      paths: {}
+      items:
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Coincident
+          Value:
+            type: FLOAT
+            value: 0.0
+          First:
+            type: INT
+            value: 0
+          FirstPos:
+            type: INT
+            value: 3
+          Second:
+            type: INT
+            value: -1
+          SecondPos:
+            type: INT
+            value: 1
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      - kind: Constraint
+        paths:
+          Type:
+            type: STRING
+            value: Distance
+          Value:
+            type: FLOAT
+            value: 4.0
+          First:
+            type: INT
+            value: -3
+          FirstPos:
+            type: INT
+            value: 0
+          Second:
+            type: INT
+            value: 0
+          SecondPos:
+            type: INT
+            value: 0
+          Third:
+            type: INT
+            value: -2000
+          ThirdPos:
+            type: INT
+            value: 0
+          Driving:
+            type: BOOL
+            value: true
+          IsActive:
+            type: BOOL
+            value: true
+      group: Sketch
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Sketch002
+      group: Base
+    MakeInternals:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Internal Geometry
+    MapMode:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: FlatFace
+      group: Attachment
+    MapReversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Attachment
+    Placement:
+      kind: Placement
+      paths:
+        Base.x:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.y:
+          type: QUANTITY
+          value: 0.0 mm
+        Base.z:
+          type: QUANTITY
+          value: 30.0 mm
+        Rotation.Angle:
+          type: QUANTITY
+          value: 0.0 deg
+        Rotation.Axis.x:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.y:
+          type: FLOAT
+          value: 0.0
+        Rotation.Axis.z:
+          type: FLOAT
+          value: 1.0
+      group: Base
+- name: Pocket
+  id: 2578
+  type_id: PartDesign::Pocket
+  properties:
+    AllowMultiFace:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: SketchBased
+    AlongSketchNormal:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Pocket
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Pocket
+      group: Base
+    Length:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 5.0 mm
+      group: Side1
+    Length2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 5.0 mm
+      group: Side2
+    Midplane:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    Offset:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side1
+    Offset2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 mm
+      group: Side2
+    Profile:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: ''
+      group: SketchBased
+    ReferenceAxis:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <Sketcher::SketchObject>
+            freecad_type: Sketcher.SketchObject
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: N_Axis
+      group: Pocket
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    Reversed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: SketchBased
+    SideType:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: One side
+      group: Pocket
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    TaperAngle:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side1
+    TaperAngle2:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 0.0 deg
+      group: Side2
+    Type:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: UpToFace
+      group: Side1
+    Type2:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Length
+      group: Side2
+    UpToFace:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <PartDesign::Pad>
+            freecad_type: PartDesign.Feature
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Face4
+      group: Side1
+    UpToFace2:
+      kind: Primitive
+      paths:
+        .:
+          type: 'NULL'
+      group: Side2
+    UseCustomVector:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Pocket
+occurrences:
+- path: Body
+  after: null
+- path: Body/Origin
+  after: null
+- path: Body/Origin/Origin001
+  after: Body/Origin/YZ_Plane
+- path: Body/Origin/XY_Plane
+  after: Body/Origin/Z_Axis
+- path: Body/Origin/XZ_Plane
+  after: Body/Origin/XY_Plane
+- path: Body/Origin/X_Axis
+  after: null
+- path: Body/Origin/YZ_Plane
+  after: Body/Origin/XZ_Plane
+- path: Body/Origin/Y_Axis
+  after: Body/Origin/X_Axis
+- path: Body/Origin/Z_Axis
+  after: Body/Origin/Y_Axis
+- path: Body/Pad
+  after: Body/Origin
+- path: Body/Pad/Sketch
+  after: null
+- path: Body/Pad001
+  after: Body/Pad
+- path: Body/Pad001/Sketch001
+  after: null
+- path: Body/Pocket
+  after: Body/Pad001
+- path: Body/Pocket/Sketch002
+  after: null
