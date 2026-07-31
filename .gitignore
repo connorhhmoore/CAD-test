@@ -10,9 +10,6 @@
 *.FCStd.lock
 *.lock
 
-# Ignore local snapshots
-.snapshots/*
-
 # OS Generated Files
 .DS_Store
 Thumbs.db
