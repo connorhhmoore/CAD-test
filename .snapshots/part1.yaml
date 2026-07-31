@@ -1,6 +1,6 @@
 v: 2
-timestamp: '2026-07-31T08:29:11.943957'
-uid: 87eb1adb-f520-47a7-86e5-c67f89cdfc46
+timestamp: '2026-07-31T08:48:18.528054'
+uid: f1c962cd-8932-4960-848b-7f14611ad10f
 objects:
 - name: Body
   id: 2564
@@ -56,7 +56,7 @@ objects:
       paths:
         .:
           type: STRING
-          value: <PartDesign::Pocket>
+          value: <PartDesign::Fillet>
           freecad_type: PartDesign.Feature
       group: Base
 - name: Origin
@@ -163,7 +163,7 @@ objects:
       paths:
         .:
           type: STRING
-          value: Engine 3D
+          value: Engine Plane
       group: Attachment
     AttachmentOffset:
       kind: Placement
@@ -828,7 +828,7 @@ objects:
       paths:
         .:
           type: STRING
-          value: Engine 3D
+          value: Engine Plane
       group: Attachment
     AttachmentOffset:
       kind: Placement
@@ -1173,7 +1173,7 @@ objects:
       paths:
         .:
           type: STRING
-          value: Engine 3D
+          value: Engine Plane
       group: Attachment
     AttachmentOffset:
       kind: Placement
@@ -1515,9 +1515,83 @@ objects:
           type: BOOL
           value: false
       group: Pocket
+- name: Fillet
+  id: 2579
+  type_id: PartDesign::Fillet
+  properties:
+    Base:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <PartDesign::Pocket>
+            freecad_type: PartDesign.Feature
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge14
+      group: Base
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Fillet
+      group: Base
+    Radius:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 1.0 mm
+      group: Fillet
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    SupportTransform:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    UseAllEdges:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Fillet
 occurrences:
 - path: Body
   after: null
+- path: Body/Fillet
+  after: Body/Pocket
 - path: Body/Origin
   after: null
 - path: Body/Origin/Origin001
