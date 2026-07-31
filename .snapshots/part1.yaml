@@ -1,6 +1,6 @@
 v: 2
-timestamp: '2026-07-31T09:20:31.204118'
-uid: 841b624f-4e89-49eb-b723-462ec407d011
+timestamp: '2026-07-31T16:50:35.800770'
+uid: b4a40ecf-a66a-4c41-94a7-2de5b2626fe0
 objects:
 - name: Body
   id: 2564
@@ -1616,6 +1616,11 @@ objects:
             .:
               type: STRING
               value: Edge19
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge18
       group: Base
     ChamferType:
       kind: Primitive
@@ -1708,22 +1713,22 @@ objects:
           paths:
             .:
               type: STRING
-              value: Edge21
+              value: Edge11
         - kind: Primitive
           paths:
             .:
               type: STRING
-              value: Edge19
+              value: Edge8
         - kind: Primitive
           paths:
             .:
               type: STRING
-              value: Edge20
+              value: Edge9
         - kind: Primitive
           paths:
             .:
               type: STRING
-              value: Edge22
+              value: Edge13
       group: Base
     FuzzyTolerance:
       kind: Primitive
