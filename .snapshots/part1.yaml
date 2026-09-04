@@ -1,6 +1,6 @@
 v: 2
-timestamp: '2026-07-31T16:50:35.800770'
-uid: b4a40ecf-a66a-4c41-94a7-2de5b2626fe0
+timestamp: '2026-09-04T20:46:54.109065'
+uid: d42b800c-f6f3-4237-a895-ca49ea71adc9
 objects:
 - name: Body
   id: 2564
@@ -1779,6 +1779,78 @@ objects:
           type: BOOL
           value: false
       group: Fillet
+- name: Fillet002
+  id: 2582
+  type_id: PartDesign::Fillet
+  properties:
+    Base:
+      kind: List
+      paths: {}
+      items:
+      - kind: Unknown
+        paths:
+          .:
+            type: STRING
+            value: <PartDesign::Fillet>
+            freecad_type: PartDesign.Feature
+      - kind: List
+        paths: {}
+        items:
+        - kind: Primitive
+          paths:
+            .:
+              type: STRING
+              value: Edge12
+      group: Base
+    FuzzyTolerance:
+      kind: Primitive
+      paths:
+        .:
+          type: FLOAT
+          value: -1.0
+      group: Part Design
+    Label:
+      kind: Primitive
+      paths:
+        .:
+          type: STRING
+          value: Fillet002
+      group: Base
+    Radius:
+      kind: Primitive
+      paths:
+        .:
+          type: QUANTITY
+          value: 1.0 mm
+      group: Fillet
+    Refine:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: true
+      group: Part Design
+    SupportTransform:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    Suppressed:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Base
+    UseAllEdges:
+      kind: Primitive
+      paths:
+        .:
+          type: BOOL
+          value: false
+      group: Fillet
 occurrences:
 - path: Body
   after: null
@@ -1788,6 +1860,8 @@ occurrences:
   after: Body/Pocket
 - path: Body/Fillet001
   after: Body/Chamfer
+- path: Body/Fillet002
+  after: Body/Fillet001
 - path: Body/Origin
   after: null
 - path: Body/Origin/Origin001
